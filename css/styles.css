@@ -26,3 +26,11 @@
   margin: 0px;
   color: #000413;
 }
+body{
+  padding-top: 50px;
+  z-index: 0;
+}
+
+.navbar-dark{
+  background-color: #010a44;
+}
