@@ -41,8 +41,11 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-12 col-sm-3 align-self-center">
                   <img src="img/logo.png" class="img-fluid" alt="Logo">
+                </div>
+                <div class="col-12 col-sm-3 mt-5 mt-sm-0 align-self-center">
+                  <a href="#ReserveTable" class="d-block btn-sm btn-warning">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -57,7 +60,7 @@
               <div class="media">
                 <img src="img/uthappizza.png" class="d-flex mr-3 img-thumbnail align-self-center" alt="Uthappizza">
                   <div class="media-body">
-                    <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span><span class="badge badge-secondary">$4.99</span> </h2>
+                    <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span> </h2>
                     <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                   </div>
               </div>
@@ -70,8 +73,13 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+              <div class="media">
+                <div class="media-body">
+                  <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                  <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                </div>
+                <img src="img/Buffet.png" class="d-flex ml-3 img-thumbnail align-self-center" alt="Uthappizza">
+              </div>
             </div>
         </div>
 
@@ -89,6 +97,62 @@
                 </div>
               </div>
             </div>
+          </div>
+        <div class="row row-content align-items-center">
+          <div class="col-12 col-sm-8 offset-sm-2">
+            <div class="card" id="ReserveTable">
+              <div class="card-title">
+                <h2 class="text-white bg-warning p-3">Reserve a Table</h2>
+              </div>
+              <div class="card-body">
+                <form>
+                  <div class="form-group row align-items-center">
+                    <label for="Nguests" class="col-md-2 col-form-label">Number of Guests</label>
+                    <div class="d-flex p-2 col-md-10 ">
+                      <div class="form-check ml-3">
+                        <input class="form-check-input" type="radio" name="NGuest" id="NGuest1" value="1" checked>
+                        <label class="form-check-label" for="NGuest1"> 1</label>
+                      </div>
+                      <div class="form-check ml-3">
+                        <input class="form-check-input" type="radio" name="NGuest" id="NGuest2" value="2">
+                        <label class="form-check-label" for="NGuest2"> 2</label>
+                      </div>
+                      <div class="form-check ml-3">
+                        <input class="form-check-input" type="radio" name="NGuest" id="NGuest3" value="3">
+                        <label class="form-check-label" for="NGuest3"> 3</label>
+                      </div>
+                      <div class="form-check ml-3">
+                        <input class="form-check-input" type="radio" name="NGuest" id="NGuest4" value="4">
+                        <label class="form-check-label" for="NGuest4"> 4</label>
+                      </div>
+                      <div class="form-check ml-3">
+                        <input class="form-check-input" type="radio" name="NGuest" id="NGuest5" value="5">
+                        <label class="form-check-label" for="NGuest5"> 5</label>
+                      </div>
+                      <div class="form-check ml-3">
+                        <input class="form-check-input" type="radio" name="NGuest" id="NGuest6" value="6">
+                        <label class="form-check-label" for="NGuest6"> 6</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label for="Nguests" class="col-md-2 col-form-label">Date and Time</label>
+                    <div class="col-md-4">
+                      <input type="text" class=" form-control" name="DateReserve" placeholder="Date">
+                    </div>
+                    <div class="col-md-4">
+                      <input type="text" class=" form-control" name="DateReserve" placeholder="Time">
+                    </div>
+                  </div>
+                  <div class="form-check row">
+                    <div class="offset-sm-2">
+                      <button type="button" class="btn btn-warning" name="button">Reserve</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
     </div>
 
