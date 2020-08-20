@@ -61,6 +61,7 @@ body{
     height: $carousel-item-height;
 
     img{
+      height: $carousel-item-height;
       position: absolute;
       top: 0;
       left: 0;
@@ -68,8 +69,25 @@ body{
   }
 }
 
-#CarouselButtons{
+#carouselButton{
   right: 0px;
   position: absolute;
-  buttom: 0px;
+  bottom: 0px;
+}
+
+.modal{
+  color:floralwhite;
+  .modal-header{
+    background: $background-dark ;
+
+    .close:hover{
+      background: $background-light;
+      color:floralwhite;
+    }
+
+  }
+  .modal-body{
+    background: $background-light;
+  }
+
 }
