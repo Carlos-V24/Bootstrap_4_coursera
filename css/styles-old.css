@@ -1,55 +1,63 @@
-.row-header {
+.row-header{
   margin: 0px auto;
-  padding: 0px 0px;
+  padding: 0px auto;
 }
-.row-content {
+.row-content{
   margin: 0px auto;
-  padding: 50px 0px;
+  padding: 50px 0px 50px 0px;
   border-bottom: 1px ridge;
   min-height: 400px;
 }
-.footer {
-  background-color: #d5d2d0;
+
+.footer{
+  background: #d5d2d0;
   margin: 0px auto;
-  padding: 20px 0px;
+  padding: 20px 0px 20px 0px;
 }
-.jumbotron {
-  margin: 0px auto;
+
+.jumbotron{
   padding: 70px 30px;
+  margin: 0px auto;
   background: #053261;
-  color: floralwhite;
+  color: #ececec;
 }
-address {
+.address{
   font-size: 80%;
   margin: 0px;
-  color: #0f0f0f;
+  color: #000413;
 }
-body {
-  padding: 50px 0px 0px 0px;
+body{
+  padding-top: 50px;
   z-index: 0;
 }
-.navbar-dark {
+
+.navbar-dark{
   background-color: #010a44;
 }
-.tab-content {
+
+.tab-content{
+  padding: 10px;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  padding: 10px;
 }
+
 .carousel {
-  background: #010a44;
+  background-color: #010a44;
 }
-.carousel .carousel-item {
+
+.carousel-item{
   height: 300px;
 }
-.carousel .carousel-item img {
+.carousel-item img {
   position: absolute;
   top: 0;
   left: 0;
+  min-height:  300px;
 }
-#CarouselButtons {
-  right: 0px;
+
+#carouselButtons{
+  right:0px;
   position: absolute;
-  buttom: 0px;
+  bottom: 0px;
 }
