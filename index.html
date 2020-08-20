@@ -38,7 +38,7 @@
           </div>
       </div>
   </nav>
-    <!-- modal -->
+  <!-- modal -->
     <div id="loginModal" class="modal fade" role="dialog">
       <div class="modal-dialog modal-lg" role="content">
         <div class="modal-content">
@@ -74,6 +74,77 @@
         </div>
       </div>
     </div>
+    <!-- modal Reserve-->
+    <div id="reserveModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg" role="content">
+        <div class="modal-content">
+          <div class="modal-header bg-warning text-white">
+            <h2 class="modal-title">Reserve a Table</h2>
+            <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group row align-items-center">
+                <label for="Nguests" class="col-md-2 col-form-label">Number of Guests</label>
+                <div class="d-flex p-2 col-md-10 ">
+                  <div class="form-check ml-3">
+                    <input class="form-check-input" type="radio" name="NGuest" id="NGuest1" value="1" checked>
+                    <label class="form-check-label" for="NGuest1"> 1</label>
+                  </div>
+                  <div class="form-check ml-3">
+                    <input class="form-check-input" type="radio" name="NGuest" id="NGuest2" value="2">
+                    <label class="form-check-label" for="NGuest2"> 2</label>
+                  </div>
+                  <div class="form-check ml-3">
+                    <input class="form-check-input" type="radio" name="NGuest" id="NGuest3" value="3">
+                    <label class="form-check-label" for="NGuest3"> 3</label>
+                  </div>
+                  <div class="form-check ml-3">
+                    <input class="form-check-input" type="radio" name="NGuest" id="NGuest4" value="4">
+                    <label class="form-check-label" for="NGuest4"> 4</label>
+                  </div>
+                  <div class="form-check ml-3">
+                    <input class="form-check-input" type="radio" name="NGuest" id="NGuest5" value="5">
+                    <label class="form-check-label" for="NGuest5"> 5</label>
+                  </div>
+                  <div class="form-check ml-3">
+                    <input class="form-check-input" type="radio" name="NGuest" id="NGuest6" value="6">
+                    <label class="form-check-label" for="NGuest6"> 6</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row align-items-center">
+                <label for="Smoking" class="col-md-2 col-form-label">Section</label>
+                <div class="btn-group btn-group-toggle ml-3 ml-sm-1" data-toggle="buttons">
+                  <label class="btn btn-success active">
+                    <input type="radio" name="Smoking" id="Non-smoking" checked> Non-smoking
+                  </label>
+                  <label class="btn btn-danger">
+                    <input type="radio" name="Smoking" id="Smoking" > Smoking
+                  </label>
+                </div>
+              </div>
+              <div class="form-group row align-items-center">
+                <label for="Nguests" class="col-md-2 col-form-label">Date and Time</label>
+                <div class="col-md-4">
+                  <input type="text" class=" form-control" name="DateReserve" placeholder="Date">
+                </div>
+                <div class="col-md-4">
+                  <input type="text" class=" form-control" name="DateReserve" placeholder="Time">
+                </div>
+              </div>
+              <div class="form-check row">
+                <div class="offset-sm-2">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal" name="button">Cancel</button>
+                  <input type="submit" class="btn btn-primary" value="Reserve">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- header -->
     <header class="jumbotron">
         <div class="container">
@@ -86,7 +157,7 @@
                   <img src="img/logo.png" class="img-fluid" alt="Logo">
                 </div>
                 <div class="col-12 col-sm-3 mt-5 mt-sm-0 align-self-center">
-                  <a href="#ReserveTable" class="d-block btn-sm btn-warning" role="button" data-toggle="tooltip" data-html="true" title="Or call us at <br><strong>+852 12345678</strong>" data-placement="bottom">Reserve Table</a>
+                  <a href="#ReserveTable" class="d-block btn-sm btn-warning" data-toggle="modal" data-target="#reserveModal">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -181,62 +252,6 @@
               </div>
             </div>
           </div>
-        <div class="row row-content align-items-center">
-          <div class="col-12 col-sm-8 offset-sm-2">
-            <div class="card" id="ReserveTable">
-              <div class="card-title">
-                <h2 class="text-white bg-warning p-3">Reserve a Table</h2>
-              </div>
-              <div class="card-body">
-                <form>
-                  <div class="form-group row align-items-center">
-                    <label for="Nguests" class="col-md-2 col-form-label">Number of Guests</label>
-                    <div class="d-flex p-2 col-md-10 ">
-                      <div class="form-check ml-3">
-                        <input class="form-check-input" type="radio" name="NGuest" id="NGuest1" value="1" checked>
-                        <label class="form-check-label" for="NGuest1"> 1</label>
-                      </div>
-                      <div class="form-check ml-3">
-                        <input class="form-check-input" type="radio" name="NGuest" id="NGuest2" value="2">
-                        <label class="form-check-label" for="NGuest2"> 2</label>
-                      </div>
-                      <div class="form-check ml-3">
-                        <input class="form-check-input" type="radio" name="NGuest" id="NGuest3" value="3">
-                        <label class="form-check-label" for="NGuest3"> 3</label>
-                      </div>
-                      <div class="form-check ml-3">
-                        <input class="form-check-input" type="radio" name="NGuest" id="NGuest4" value="4">
-                        <label class="form-check-label" for="NGuest4"> 4</label>
-                      </div>
-                      <div class="form-check ml-3">
-                        <input class="form-check-input" type="radio" name="NGuest" id="NGuest5" value="5">
-                        <label class="form-check-label" for="NGuest5"> 5</label>
-                      </div>
-                      <div class="form-check ml-3">
-                        <input class="form-check-input" type="radio" name="NGuest" id="NGuest6" value="6">
-                        <label class="form-check-label" for="NGuest6"> 6</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group row align-items-center">
-                    <label for="Nguests" class="col-md-2 col-form-label">Date and Time</label>
-                    <div class="col-md-4">
-                      <input type="text" class=" form-control" name="DateReserve" placeholder="Date">
-                    </div>
-                    <div class="col-md-4">
-                      <input type="text" class=" form-control" name="DateReserve" placeholder="Time">
-                    </div>
-                  </div>
-                  <div class="form-check row">
-                    <div class="offset-sm-2">
-                      <button type="button" class="btn btn-warning" name="button">Reserve</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
     </div>
 
     <footer class="footer">
@@ -284,11 +299,6 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-      $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
-      });
-    </script>
 </body>
 
 </html>
