@@ -1,6 +1,6 @@
-$("document").ready(()=>{
+$("document").ready(function(){
   $("#mycarousel").carousel({ interval: 2000 });
-  $("#carouselButton-toggle").click(()=>{
+  $("#carouselButton-toggle").click(function(){
     if($("#carouselButton-toggle").children("span").hasClass("fa-pause")) {
       $("#mycarousel").carousel("pause");
       $("#carouselButton-toggle").removeClass("btn-danger")
@@ -17,18 +17,18 @@ $("document").ready(()=>{
     }
   });
   //Login Modal
-  $("#loginModal-button").click(()=>{
+  $("#loginModal-button").click(function(){
     $('#loginModal').modal('show');
   })
-  $(".closeLoginModal").click(()=>{
+  $(".closeLoginModal").click(function(){
     $('#loginModal').modal('hide');
   })
   //Reserve modal
-  $("#reserveModal-button").click(()=>{
+  $("#reserveModal-button").click(function(){
     $('#reserveModal').modal('show');
     console.log("Wue hubo")
   })
-  $(".closeReserveModal").click(()=>{
+  $(".closeReserveModal").click(function(){
     $('#reserveModal').modal('hide');
   })
 });
